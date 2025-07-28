@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Water Billing App - Dark Gold Theme Design System */
+
+@layer base {
+  :root {
+    /* Dark Gold Theme - Water Billing App */
+    --background: 0 0% 5.5%;        /* #0e0e0e - Deep Black */
+    --foreground: 0 0% 100%;        /* #ffffff - Pure White */
+
+    --card: 30 7% 10%;              /* #1a1a1a - Dark Brown */
+    --card-foreground: 0 0% 100%;
+
+    --popover: 30 7% 10%;
+    --popover-foreground: 0 0% 100%;
+
+    /* Gold Primary Colors */
+    --primary: 51 100% 50%;         /* #FFD700 - Gold */
+    --primary-foreground: 0 0% 0%;  /* Black text on gold */
+    --primary-hover: 45 100% 45%;   /* #E6C200 - Darker Gold */
+
+    /* Secondary - Warm Brown */
+    --secondary: 30 15% 15%;        /* #262016 - Dark Brown */
+    --secondary-foreground: 0 0% 100%;
+
+    /* Muted - Subtle variants */
+    --muted: 30 10% 12%;            /* #1f1e1a - Darker Brown */
+    --muted-foreground: 0 0% 80%;   /* #cccccc - Light Gray */
+
+    /* Accent - Subtle Gold */
+    --accent: 45 50% 25%;           /* #4d4426 - Muted Gold Brown */
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;       /* Red for errors */
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 30 10% 20%;           /* #332e26 - Brown Border */
+    --input: 30 10% 15%;            /* #262016 - Input Background */
+    --ring: 51 100% 50%;            /* Gold focus ring */
+
+    --radius: 0.75rem;
+
+    /* Sidebar specific */
+    --sidebar-background: 30 7% 8%;  /* #141211 - Darker than card */
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 51 100% 50%;
+    --sidebar-primary-foreground: 0 0% 0%;
+    --sidebar-accent: 30 10% 12%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 30 10% 18%;
+    --sidebar-ring: 51 100% 50%;
+
+    /* Custom Design Tokens */
+    --gold: 51 100% 50%;            /* #FFD700 */
+    --gold-dark: 45 100% 45%;       /* #E6C200 */
+    --gold-light: 54 100% 80%;      /* #FFEB80 */
+    --brown-dark: 30 15% 15%;       /* #262016 */
+    --brown-medium: 30 10% 20%;     /* #332e26 */
+    --brown-light: 30 10% 25%;      /* #403b33 */
+
+    /* Gradients */
+    --gradient-gold: linear-gradient(135deg, hsl(var(--gold)), hsl(var(--gold-dark)));
+    --gradient-dark: linear-gradient(180deg, hsl(var(--background)), hsl(var(--card)));
+    --gradient-brown: linear-gradient(135deg, hsl(var(--brown-dark)), hsl(var(--brown-medium)));
+
+    /* Shadows */
+    --shadow-gold: 0 10px 30px -10px hsl(var(--gold) / 0.3);
+    --shadow-elegant: 0 20px 60px -20px hsl(0 0% 0% / 0.8);
+    --shadow-soft: 0 4px 20px -4px hsl(0 0% 0% / 0.4);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-fast: all 0.15s ease-out;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
